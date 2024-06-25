@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webex Meetings</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center my-4">List of Meetings</h1>
-        <div id="meeting-container" class="row">
+    <header>
+        <b><h1><img src="webex symbol.png" alt="Webex Symbol"> Webex Lyte </h1></b>
+    </header>
+    <div class="container" id="meeting-container" style="display: none;">
+        <div class="row">
             <div id="meeting-lists" class="col-md-4">
                 <div class="meeting-section mb-4">
-                    <h2>Ongoing Meetings</h2>
+                    <h5>Ongoing Meetings</h5>
                     <div id="ongoing-meeting-list" class="meeting-list"></div>
                 </div>
                 <div class="meeting-section">
-                    <h2>Upcoming Meetings</h2>
+                    <h5>Upcoming Meetings</h5>
                     <div id="upcoming-meeting-list" class="meeting-list"></div>
                 </div>
             </div>
@@ -31,6 +33,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/webex/umd/webex.min.js"></script>
+    <script defer src="https://unpkg.com/webex@3.1.0/umd/webex.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
